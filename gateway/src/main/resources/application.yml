@@ -30,7 +30,7 @@ spring:
 ratelimiter-conf:
   #配置限流参数与RateLimiterConf类映射
   rateLimitMap:
-    #格式为：routeid(gateway配置固定).系统名称.replenishRate(流速)/burstCapacity令牌桶大小
+    #格式为：routeid(gateway配置固定).token+path.replenishRate(流速)/burstCapacity令牌桶大小
     rateLimit_route.t1.rateLimit-hello.replenishRate: 1
     rateLimit_route.t1.rateLimit-hello.burstCapacity: 5
 

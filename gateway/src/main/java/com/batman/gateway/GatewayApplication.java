@@ -23,14 +23,6 @@ public class GatewayApplication {
         SpringApplication.run(GatewayApplication.class, args);
     }
 
-//    @Bean(name = BEAN_NAME)
-//    @Qualifier(BEAN_NAME)
-//    @Primary
-//    public RemoteAddrKeyResolver remoteAddrKeyResolver() {
-//        return new RemoteAddrKeyResolver();
-//    }
-
-
     @Bean
     KeyResolver sysKeyResolver() {
         return exchange -> {
