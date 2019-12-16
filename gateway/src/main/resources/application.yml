@@ -36,5 +36,5 @@ ratelimiter-conf:
 
 logging:
   level:
-    #org.springframework.cloud.gateway: debug
+    org.springframework.cloud.gateway: debug
     com.batman.gateway: debug
